@@ -117,7 +117,7 @@ const HeroSection = () => {
               <Linkedin size={20} />
             </a>
             <a
-              href="mailto:your.email@example.com" 
+              href="mailto:mochamadabdulrouf1@gmail.com" 
               className="p-2 rounded-full bg-secondary text-foreground hover:text-primary hover:bg-primary/10 transition-all"
               aria-label="Email"
             >
