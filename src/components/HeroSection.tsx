@@ -1,9 +1,37 @@
 
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { cn } from '@/lib/utils';
 import { ArrowDownCircle, Download, Github, Linkedin, Mail } from 'lucide-react';
 
 const HeroSection = () => {
+  const profileRef = useRef<HTMLDivElement>(null);
+  
+  useEffect(() => {
+    // Floating animation for profile
+    const profileElement = profileRef.current;
+    if (!profileElement) return;
+    
+    let startTime = Date.now();
+    
+    const animate = () => {
+      const elapsed = Date.now() - startTime;
+      const translateY = Math.sin(elapsed / 1000) * 8;
+      const rotation = Math.sin(elapsed / 2000) * 2;
+      
+      if (profileElement) {
+        profileElement.style.transform = `translateY(${translateY}px) rotate(${rotation}deg)`;
+      }
+      
+      requestAnimationFrame(animate);
+    };
+    
+    const animationFrame = requestAnimationFrame(animate);
+    
+    return () => {
+      cancelAnimationFrame(animationFrame);
+    };
+  }, []);
+
   const scrollToExperience = () => {
     const experienceSection = document.getElementById('experience');
     if (experienceSection) {
@@ -13,10 +41,27 @@ const HeroSection = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center relative overflow-hidden pt-16">
-      {/* Background elements */}
+      {/* Particle animation background */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute top-1/4 -left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/3 right-0 w-80 h-80 bg-primary/15 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 -left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/3 right-0 w-80 h-80 bg-primary/15 rounded-full blur-3xl animate-pulse animate-delay-500"></div>
+        
+        {/* Additional particles */}
+        {Array.from({ length: 10 }).map((_, i) => (
+          <div 
+            key={i} 
+            className={`absolute rounded-full bg-primary/30 animate-pulse`}
+            style={{
+              width: `${Math.random() * 10 + 5}px`,
+              height: `${Math.random() * 10 + 5}px`,
+              top: `${Math.random() * 100}%`,
+              left: `${Math.random() * 100}%`,
+              animationDuration: `${Math.random() * 3 + 2}s`,
+              animationDelay: `${Math.random() * 2}s`,
+              opacity: Math.random() * 0.5 + 0.2
+            }}
+          />
+        ))}
       </div>
       
       <div className="section-container grid md:grid-cols-2 gap-12 items-center">
@@ -83,8 +128,8 @@ const HeroSection = () => {
         
         <div className="md:order-2 order-1 flex justify-center md:justify-end">
           <div className="relative w-64 h-64 sm:w-80 sm:h-80 animate-fade-in">
-            {/* Profile image with decorative elements */}
-            <div className="absolute inset-0 flex items-center justify-center">
+            {/* Profile image with floating animation */}
+            <div ref={profileRef} className="absolute inset-0 flex items-center justify-center transition-transform duration-300">
               <div className="w-full h-full rounded-full overflow-hidden border-2 border-primary/30 shadow-xl">
                 <div className="w-full h-full bg-secondary flex items-center justify-center">
                   {/* Replace with your profile image */}
@@ -99,6 +144,14 @@ const HeroSection = () => {
             <div className="absolute -top-6 -left-6 p-4 glass-panel rounded-lg animate-fade-in animate-delay-600">
               <p className="text-sm font-medium">DevOps Enthusiast</p>
               <p className="text-xs text-muted-foreground">CI/CD & Automation</p>
+            </div>
+            
+            {/* Animated decorative elements */}
+            <div className="absolute -z-10 w-full h-full animate-spin" style={{ animationDuration: '15s' }}>
+              <div className="absolute top-0 left-1/2 w-2 h-2 rounded-full bg-primary/60"></div>
+              <div className="absolute bottom-0 left-1/2 w-2 h-2 rounded-full bg-primary/60"></div>
+              <div className="absolute left-0 top-1/2 w-2 h-2 rounded-full bg-primary/60"></div>
+              <div className="absolute right-0 top-1/2 w-2 h-2 rounded-full bg-primary/60"></div>
             </div>
           </div>
         </div>
