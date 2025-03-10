@@ -45,7 +45,7 @@ const SkillBar = ({ name, level }: { name: string, level: number }) => {
         <span className="text-sm font-medium">{name}</span>
         <span className="text-xs text-muted-foreground">{level}%</span>
       </div>
-      <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
+      <div className="h-2 bg-secondary rounded-full overflow-hidden">
         <div 
           className="h-full bg-primary rounded-full transition-all duration-1000 ease-out"
           style={{ width: `${level}%`, transitionDelay: '300ms' }}
@@ -70,7 +70,7 @@ const SkillsSection = () => {
           {skillCategories.map((category, index) => (
             <div 
               key={index} 
-              className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300"
+              className="bg-card rounded-xl p-6 border border-border shadow-md hover:shadow-lg hover:shadow-primary/10 transition-all duration-300"
             >
               <div className="flex items-center gap-3 mb-6">
                 <div className="p-2 rounded-lg bg-primary/10">
@@ -83,7 +83,7 @@ const SkillsSection = () => {
                 {category.skills.map((skill, i) => (
                   <div 
                     key={i} 
-                    className="flex items-center p-2 rounded-lg hover:bg-gray-50 transition-colors"
+                    className="flex items-center p-2 rounded-lg hover:bg-secondary transition-colors"
                   >
                     <div className="w-2 h-2 rounded-full bg-primary mr-3"></div>
                     <span>{skill}</span>
@@ -95,7 +95,7 @@ const SkillsSection = () => {
         </div>
         
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div className="bg-white rounded-xl p-8 border border-gray-100 shadow-sm">
+          <div className="bg-card rounded-xl p-8 border border-border shadow-md">
             <h3 className="text-xl font-semibold mb-6">Technical Proficiency</h3>
             <div className="space-y-6">
               <SkillBar name="Cloud Infrastructure" level={95} />
@@ -106,7 +106,7 @@ const SkillsSection = () => {
             </div>
           </div>
           
-          <div className="bg-white rounded-xl p-8 border border-gray-100 shadow-sm">
+          <div className="bg-card rounded-xl p-8 border border-border shadow-md">
             <h3 className="text-xl font-semibold mb-6">Soft Skills</h3>
             <div className="space-y-6">
               <SkillBar name="Technical Leadership" level={85} />

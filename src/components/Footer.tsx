@@ -11,7 +11,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gray-50 py-12">
+    <footer className="bg-card py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
@@ -44,14 +44,14 @@ const Footer = () => {
           
           <button 
             onClick={scrollToTop}
-            className="p-3 rounded-full bg-white shadow-sm border border-gray-100 text-primary hover:bg-primary hover:text-white transition-all"
+            className="p-3 rounded-full bg-secondary shadow-sm border border-border text-primary hover:bg-primary hover:text-white transition-all"
             aria-label="Scroll to top"
           >
             <ArrowUp size={20} />
           </button>
         </div>
         
-        <div className="mt-12 pt-8 border-t border-gray-200">
+        <div className="mt-12 pt-8 border-t border-border">
           <p className="text-center text-muted-foreground text-sm">
             &copy; {new Date().getFullYear()} DevOps Pro. All rights reserved.
           </p>
