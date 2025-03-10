@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { ArrowDownCircle, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowDownCircle, Download, Github, Linkedin, Mail } from 'lucide-react';
 
 const HeroSection = () => {
   const scrollToExperience = () => {
@@ -15,8 +15,8 @@ const HeroSection = () => {
     <section id="home" className="min-h-screen flex items-center relative overflow-hidden pt-16">
       {/* Background elements */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute top-1/4 -left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/3 right-0 w-80 h-80 bg-primary/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 -left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/3 right-0 w-80 h-80 bg-primary/15 rounded-full blur-3xl"></div>
       </div>
       
       <div className="section-container grid md:grid-cols-2 gap-12 items-center">
@@ -26,10 +26,10 @@ const HeroSection = () => {
               DevOps Engineer
             </p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-balance leading-tight animate-fade-in animate-delay-100">
-              Building Infrastructure <span className="text-primary">For The Future</span>
+              Mochamad Abdul <span className="text-primary">Rouf</span>
             </h1>
             <p className="text-lg text-muted-foreground text-balance animate-fade-in animate-delay-200">
-              Specializing in automating, optimizing, and maintaining modern cloud infrastructure for scalable applications.
+              Fresh Graduate specializing in DevOps, cloud infrastructure, and automation for modern applications.
             </p>
           </div>
           
@@ -43,10 +43,12 @@ const HeroSection = () => {
             </button>
             
             <a 
-              href="#contact" 
-              className="px-6 py-3 rounded-lg border border-primary/20 bg-primary/5 text-primary font-medium transition-all hover:bg-primary/10"
+              href="/mochamad-abdul-rouf-cv.pdf" 
+              download
+              className="px-6 py-3 rounded-lg border border-primary/20 bg-primary/5 text-primary font-medium transition-all hover:bg-primary/10 flex items-center gap-2"
             >
-              Contact Me
+              Download CV
+              <Download size={18} />
             </a>
           </div>
           
@@ -55,7 +57,7 @@ const HeroSection = () => {
               href="https://github.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="p-2 rounded-full bg-secondary text-gray-700 hover:text-primary hover:bg-primary/10 transition-all"
+              className="p-2 rounded-full bg-secondary text-foreground hover:text-primary hover:bg-primary/10 transition-all"
               aria-label="GitHub"
             >
               <Github size={20} />
@@ -64,14 +66,14 @@ const HeroSection = () => {
               href="https://linkedin.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="p-2 rounded-full bg-secondary text-gray-700 hover:text-primary hover:bg-primary/10 transition-all"
+              className="p-2 rounded-full bg-secondary text-foreground hover:text-primary hover:bg-primary/10 transition-all"
               aria-label="LinkedIn"
             >
               <Linkedin size={20} />
             </a>
             <a
               href="mailto:your.email@example.com" 
-              className="p-2 rounded-full bg-secondary text-gray-700 hover:text-primary hover:bg-primary/10 transition-all"
+              className="p-2 rounded-full bg-secondary text-foreground hover:text-primary hover:bg-primary/10 transition-all"
               aria-label="Email"
             >
               <Mail size={20} />
@@ -83,19 +85,19 @@ const HeroSection = () => {
           <div className="relative w-64 h-64 sm:w-80 sm:h-80 animate-fade-in">
             {/* Profile image with decorative elements */}
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-full h-full rounded-full overflow-hidden border-2 border-white shadow-xl">
-                <div className="w-full h-full bg-gray-200 flex items-center justify-center">
+              <div className="w-full h-full rounded-full overflow-hidden border-2 border-primary/30 shadow-xl">
+                <div className="w-full h-full bg-secondary flex items-center justify-center">
                   {/* Replace with your profile image */}
-                  <span className="text-gray-400 text-sm">Your Photo</span>
+                  <span className="text-foreground text-sm">Your Photo</span>
                 </div>
               </div>
             </div>
             <div className="absolute -bottom-6 -right-6 p-4 glass-panel rounded-lg animate-fade-in animate-delay-500">
-              <p className="text-sm font-medium">5+ Years Experience</p>
+              <p className="text-sm font-medium">Fresh Graduate</p>
               <p className="text-xs text-muted-foreground">Cloud & Infrastructure</p>
             </div>
             <div className="absolute -top-6 -left-6 p-4 glass-panel rounded-lg animate-fade-in animate-delay-600">
-              <p className="text-sm font-medium">DevOps Expert</p>
+              <p className="text-sm font-medium">DevOps Enthusiast</p>
               <p className="text-xs text-muted-foreground">CI/CD & Automation</p>
             </div>
           </div>
