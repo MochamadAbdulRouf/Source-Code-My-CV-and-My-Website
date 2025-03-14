@@ -1,7 +1,7 @@
 
 import React from 'react';
 import AnimatedSection from './AnimatedSection';
-import { Server, Database, Cloud, Terminal, Code, Shield } from 'lucide-react';
+import { Server, Database, Cloud, Terminal, Code, Shield, Users } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 // Define skill categories
@@ -9,32 +9,37 @@ const skillCategories = [
   {
     name: "Cloud Platforms",
     icon: <Cloud className="w-6 h-6 text-primary" />,
-    skills: ["AWS", "Google Cloud", "Azure", "Digital Ocean", "Heroku"]
+    skills: ["AWS"]
   },
   {
     name: "Containerization",
     icon: <Server className="w-6 h-6 text-primary" />,
-    skills: ["Docker", "Kubernetes", "Docker Swarm", "Helm", "Podman"]
+    skills: ["Docker", "Kubernetes"]
   },
   {
     name: "CI/CD",
     icon: <Code className="w-6 h-6 text-primary" />,
-    skills: ["Jenkins", "GitHub Actions", "GitLab CI/CD", "CircleCI", "ArgoCD"]
+    skills: ["GitLab CI/CD"]
   },
   {
     name: "Infrastructure as Code",
     icon: <Terminal className="w-6 h-6 text-primary" />,
-    skills: ["Terraform", "Ansible", "CloudFormation", "Pulumi", "Chef"]
+    skills: ["Terraform", "Ansible"]
   },
   {
     name: "Monitoring & Observability",
     icon: <Shield className="w-6 h-6 text-primary" />,
-    skills: ["Prometheus", "Grafana", "ELK Stack", "New Relic", "Datadog"]
+    skills: ["Prometheus"]
   },
   {
     name: "Database Management",
     icon: <Database className="w-6 h-6 text-primary" />,
-    skills: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "DynamoDB"]
+    skills: ["PostgreSQL", "MySQL", "Redis", "DynamoDB"]
+  },
+  {
+    name: "Organizations",
+    icon: <Users className="w-6 h-6 text-primary" />,
+    skills: ["Komunitas IT SMKN 1 Nglegok"]
   }
 ];
 

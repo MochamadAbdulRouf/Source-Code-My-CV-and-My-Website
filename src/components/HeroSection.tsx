@@ -99,38 +99,50 @@ const HeroSection = () => {
           
           <div className="flex items-center gap-4 pt-4 animate-fade-in animate-delay-400">
             <a
-              href="https://github.com" 
+              href="https://github.com/MochamadAbdulRouf" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="p-2 rounded-full bg-secondary text-foreground hover:text-primary hover:bg-primary/10 transition-all"
+              className="p-2 rounded-full bg-secondary text-foreground hover:bg-[#171515] hover:text-white transition-all hover:scale-110"
               aria-label="GitHub"
             >
-              <Github size={20} />
+              <Github size={22} />
             </a>
             <a
               href="https://linkedin.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="p-2 rounded-full bg-secondary text-foreground hover:text-primary hover:bg-primary/10 transition-all"
+              className="p-2 rounded-full bg-secondary text-foreground hover:bg-[#0077B5] hover:text-white transition-all hover:scale-110"
               aria-label="LinkedIn"
             >
-              <Linkedin size={20} />
+              <Linkedin size={22} />
             </a>
             <a
               href="https://instagram.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="p-2 rounded-full bg-secondary text-foreground hover:text-primary hover:bg-primary/10 transition-all"
+              className="p-2 rounded-full bg-secondary text-foreground hover:bg-gradient-to-br hover:from-[#f9ce34] hover:via-[#ee2a7b] hover:to-[#6228d7] hover:text-white transition-all hover:scale-110"
               aria-label="Instagram"
             >
-              <Instagram size={20} />
+              <Instagram size={22} />
             </a>
             <a
               href="mailto:mochamadabdulrouf1@gmail.com" 
-              className="p-2 rounded-full bg-secondary text-foreground hover:text-primary hover:bg-primary/10 transition-all"
+              className="p-2 rounded-full bg-secondary text-foreground hover:bg-primary hover:text-white transition-all hover:scale-110"
               aria-label="Email"
             >
-              <Mail size={20} />
+              <Mail size={22} />
+            </a>
+            <a
+              href="https://blogger.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="p-2 rounded-full bg-secondary text-foreground hover:bg-[#FF5722] hover:text-white transition-all hover:scale-110"
+              aria-label="Blogger"
+            >
+              <svg className="w-[22px] h-[22px]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M14.5 16.5h-5c-.6 0-1-.4-1-1s.4-1 1-1h5c.6 0 1 .4 1 1s-.4 1-1 1zM12 13.5h-2.5c-.6 0-1-.4-1-1s.4-1 1-1H12c.6 0 1 .4 1 1s-.4 1-1 1z"/>
+                <path d="M20.3 4.8h-4.8c-1.9 0-3.7.7-5 2.1-1.3-1.3-3.1-2.1-5-2.1H3.7c-.8 0-1.5.7-1.5 1.5v8.8c0 5.4 4.4 9.8 9.8 9.8s9.8-4.4 9.8-9.8V6.3c0-.8-.7-1.5-1.5-1.5zm-.3 10.3c0 4.7-3.8 8.5-8.5 8.5s-8.5-3.8-8.5-8.5V6.3c0-.1.1-.2.2-.2h1.5c3.6 0 6.5 2.9 6.5 6.5 0 .4.3.7.7.7s.7-.3.7-.7c0-3.6 2.9-6.5 6.5-6.5h.6c.1 0 .2.1.2.2v8.8z"/>
+              </svg>
             </a>
           </div>
         </div>
