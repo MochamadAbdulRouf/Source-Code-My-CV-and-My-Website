@@ -1,7 +1,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import { cn } from '@/lib/utils';
-import { ArrowDownCircle, Download, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowDownCircle, Download, Github, Instagram, Linkedin, Mail } from 'lucide-react';
 
 const HeroSection = () => {
   const profileRef = useRef<HTMLDivElement>(null);
@@ -115,6 +115,15 @@ const HeroSection = () => {
               aria-label="LinkedIn"
             >
               <Linkedin size={20} />
+            </a>
+            <a
+              href="https://instagram.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="p-2 rounded-full bg-secondary text-foreground hover:text-primary hover:bg-primary/10 transition-all"
+              aria-label="Instagram"
+            >
+              <Instagram size={20} />
             </a>
             <a
               href="mailto:mochamadabdulrouf1@gmail.com" 
