@@ -11,7 +11,7 @@ import Footer from '@/components/Footer';
 const Index = () => {
   useEffect(() => {
     // Update document title
-    document.title = 'DevOps Pro | Professional CV';
+    document.title = 'My Website | Professional CV';
     
     // Initialize any scripts or event listeners here
     const handleScroll = () => {

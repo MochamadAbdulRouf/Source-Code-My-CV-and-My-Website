@@ -51,7 +51,7 @@ const Header = () => {
           href="#home" 
           className="text-lg font-semibold text-primary transition-all duration-300 hover:opacity-80"
         >
-          DevOps.Pro
+          My Website
         </a>
         
         <nav className="hidden md:flex space-x-8">

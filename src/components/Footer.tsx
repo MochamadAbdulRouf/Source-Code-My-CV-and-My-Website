@@ -15,7 +15,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
-            <p className="text-lg font-semibold text-primary">DevOps.Pro</p>
+            <p className="text-lg font-semibold text-primary">My Website</p>
             <p className="text-muted-foreground mt-2">Building scalable infrastructure for the future.</p>
           </div>
           
@@ -53,7 +53,7 @@ const Footer = () => {
         
         <div className="mt-12 pt-8 border-t border-border">
           <p className="text-center text-muted-foreground text-sm">
-            &copy; {new Date().getFullYear()} DevOps Pro. All rights reserved.
+            &copy; {new Date().getFullYear()} My Website. All rights reserved.
           </p>
         </div>
       </div>
