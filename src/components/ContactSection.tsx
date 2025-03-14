@@ -25,7 +25,7 @@ const ContactSection = () => {
                   <Mail className="h-7 w-7 text-primary" />
                 </div>
                 <div>
-                  <h4 className="text-lg font-medium mb-1 text-primary">Email</h4>
+                  <h4 className="text-lg font-medium mb-1 text-purple-600">Email</h4>
                   <a href="mailto:mochamadabdulrouf1@gmail.com" className="text-gray-600 hover:text-primary transition-colors">
                     mochamadabdulrouf1@gmail.com
                   </a>
@@ -37,7 +37,7 @@ const ContactSection = () => {
                   <Phone className="h-7 w-7 text-primary" />
                 </div>
                 <div>
-                  <h4 className="text-lg font-medium mb-1 text-primary">Phone</h4>
+                  <h4 className="text-lg font-medium mb-1 text-purple-600">Phone</h4>
                   <a href="tel:+6285704427944" className="text-gray-600 hover:text-primary transition-colors">
                     +62 857 0442 7944
                   </a>
@@ -49,7 +49,7 @@ const ContactSection = () => {
                   <MapPin className="h-7 w-7 text-primary" />
                 </div>
                 <div>
-                  <h4 className="text-lg font-medium mb-1 text-primary">Location</h4>
+                  <h4 className="text-lg font-medium mb-1 text-purple-600">Location</h4>
                   <p className="text-gray-600">Blitar, Jawa Timur, Indonesia</p>
                 </div>
               </div>
@@ -72,7 +72,7 @@ const ContactSection = () => {
                 </a>
                 
                 <a 
-                  href="https://linkedin.com" 
+                  href="https://www.linkedin.com/in/mochamad-abdul-rouf-b09333338" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="group flex flex-col items-center gap-2"
@@ -85,7 +85,7 @@ const ContactSection = () => {
                 </a>
                 
                 <a 
-                  href="https://instagram.com" 
+                  href="https://www.instagram.com/mochabdlrouf?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="group flex flex-col items-center gap-2"
@@ -98,7 +98,7 @@ const ContactSection = () => {
                 </a>
                 
                 <a 
-                  href="https://blogger.com" 
+                  href="https://mochabdulrouf.blogspot.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="group flex flex-col items-center gap-2"

@@ -34,10 +34,11 @@ const Footer = () => {
             <div>
               <h3 className="text-sm font-semibold uppercase tracking-wider mb-4">Connect</h3>
               <ul className="space-y-3">
-                <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">GitHub</a></li>
-                <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">LinkedIn</a></li>
-                <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">Twitter</a></li>
-                <li><a href="mailto:your.email@example.com" className="text-muted-foreground hover:text-primary transition-colors">Email</a></li>
+                <li><a href="https://github.com/MochamadAbdulRouf" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/mochamad-abdul-rouf-b09333338" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/mochabdlrouf?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">Instagram</a></li>
+                <li><a href="mailto:mochamadabdulrouf1@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">Email</a></li>
+                <li><a href="https://mochabdulrouf.blogspot.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">Blogger</a></li>
               </ul>
             </div>
           </div>

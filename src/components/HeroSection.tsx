@@ -108,7 +108,7 @@ const HeroSection = () => {
               <Github size={22} />
             </a>
             <a
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/mochamad-abdul-rouf-b09333338" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-2 rounded-full bg-secondary text-foreground hover:bg-[#0077B5] hover:text-white transition-all hover:scale-110"
@@ -117,7 +117,7 @@ const HeroSection = () => {
               <Linkedin size={22} />
             </a>
             <a
-              href="https://instagram.com" 
+              href="https://www.instagram.com/mochabdlrouf?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-2 rounded-full bg-secondary text-foreground hover:bg-gradient-to-br hover:from-[#f9ce34] hover:via-[#ee2a7b] hover:to-[#6228d7] hover:text-white transition-all hover:scale-110"
@@ -133,7 +133,7 @@ const HeroSection = () => {
               <Mail size={22} />
             </a>
             <a
-              href="https://blogger.com" 
+              href="https://mochabdulrouf.blogspot.com" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-2 rounded-full bg-secondary text-foreground hover:bg-[#FF5722] hover:text-white transition-all hover:scale-110"
