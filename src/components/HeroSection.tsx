@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from 'react';
 import { cn } from '@/lib/utils';
 import { ArrowDownCircle, Download, Github, Instagram, Linkedin, Mail } from 'lucide-react';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const HeroSection = () => {
   const profileRef = useRef<HTMLDivElement>(null);
@@ -140,8 +141,7 @@ const HeroSection = () => {
               aria-label="Blogger"
             >
               <svg className="w-[22px] h-[22px]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M14.5 16.5h-5c-.6 0-1-.4-1-1s.4-1 1-1h5c.6 0 1 .4 1 1s-.4 1-1 1zM12 13.5h-2.5c-.6 0-1-.4-1-1s.4-1 1-1H12c.6 0 1 .4 1 1s-.4 1-1 1z"/>
-                <path d="M20.3 4.8h-4.8c-1.9 0-3.7.7-5 2.1-1.3-1.3-3.1-2.1-5-2.1H3.7c-.8 0-1.5.7-1.5 1.5v8.8c0 5.4 4.4 9.8 9.8 9.8s9.8-4.4 9.8-9.8V6.3c0-.8-.7-1.5-1.5-1.5zm-.3 10.3c0 4.7-3.8 8.5-8.5 8.5s-8.5-3.8-8.5-8.5V6.3c0-.1.1-.2.2-.2h1.5c3.6 0 6.5 2.9 6.5 6.5 0 .4.3.7.7.7s.7-.3.7-.7c0-3.6 2.9-6.5 6.5-6.5h.6c.1 0 .2.1.2.2v8.8z"/>
+                <path d="M21.976 24H2.026C0.908 24 0 23.092 0 21.976V2.026C0 0.908 0.908 0 2.026 0h19.95C23.092 0 24 0.908 24 2.026v19.95C24 23.092 23.092 24 21.976 24zM9.056 7.012h5.889v1.941h-5.89V7.012zm-5.889 2.665h11.78v1.55H3.167v-1.55zm0 3.45h11.78v1.55H3.167v-1.55zm10.834 3.445H3.167v1.553h10.834v-1.553z"/>
               </svg>
             </a>
           </div>
@@ -151,11 +151,15 @@ const HeroSection = () => {
           <div className="relative w-64 h-64 sm:w-80 sm:h-80 animate-fade-in">
             {/* Profile image with floating animation */}
             <div ref={profileRef} className="absolute inset-0 flex items-center justify-center transition-transform duration-300">
-              <div className="w-full h-full rounded-full overflow-hidden border-2 border-primary/30 shadow-xl">
-                <div className="w-full h-full bg-secondary flex items-center justify-center">
-                  {/* Replace with your profile image */}
-                  <span className="text-foreground text-sm">Your Photo</span>
-                </div>
+              <div className="w-full h-full rounded-full overflow-hidden border-4 border-primary/30 shadow-xl">
+                <Avatar className="w-full h-full">
+                  <AvatarImage 
+                    src="/lovable-uploads/a2810cf4-2333-45cd-ad74-d8e2ff212f04.png" 
+                    alt="Mochamad Abdul Rouf" 
+                    className="object-cover"
+                  />
+                  <AvatarFallback>MAR</AvatarFallback>
+                </Avatar>
               </div>
             </div>
             <div className="absolute -bottom-6 -right-6 p-4 glass-panel rounded-lg animate-fade-in animate-delay-500">

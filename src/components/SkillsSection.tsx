@@ -3,6 +3,7 @@ import React from 'react';
 import AnimatedSection from './AnimatedSection';
 import { Server, Database, Cloud, Terminal, Code, Shield, Users } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import KomunitasITLogo from './KomunitasITLogo';
 
 // Define skill categories
 const skillCategories = [
@@ -39,7 +40,12 @@ const skillCategories = [
   {
     name: "Organizations",
     icon: <Users className="w-6 h-6 text-primary" />,
-    skills: ["Komunitas IT SMKN 1 Nglegok"]
+    skills: [
+      <div key="komunitas" className="flex items-center gap-2">
+        <KomunitasITLogo />
+        <span>Komunitas IT SMKN 1 Nglegok</span>
+      </div>
+    ]
   }
 ];
 

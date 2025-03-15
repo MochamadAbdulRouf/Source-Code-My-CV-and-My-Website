@@ -106,8 +106,7 @@ const ContactSection = () => {
                 >
                   <div className="p-4 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 group-hover:bg-[#FF5722] group-hover:text-white transform transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:rotate-6">
                     <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M14.5 16.5h-5c-.6 0-1-.4-1-1s.4-1 1-1h5c.6 0 1 .4 1 1s-.4 1-1 1zM12 13.5h-2.5c-.6 0-1-.4-1-1s.4-1 1-1H12c.6 0 1 .4 1 1s-.4 1-1 1z"/>
-                      <path d="M20.3 4.8h-4.8c-1.9 0-3.7.7-5 2.1-1.3-1.3-3.1-2.1-5-2.1H3.7c-.8 0-1.5.7-1.5 1.5v8.8c0 5.4 4.4 9.8 9.8 9.8s9.8-4.4 9.8-9.8V6.3c0-.8-.7-1.5-1.5-1.5zm-.3 10.3c0 4.7-3.8 8.5-8.5 8.5s-8.5-3.8-8.5-8.5V6.3c0-.1.1-.2.2-.2h1.5c3.6 0 6.5 2.9 6.5 6.5 0 .4.3.7.7.7s.7-.3.7-.7c0-3.6 2.9-6.5 6.5-6.5h.6c.1 0 .2.1.2.2v8.8z"/>
+                      <path d="M21.976 24H2.026C0.908 24 0 23.092 0 21.976V2.026C0 0.908 0.908 0 2.026 0h19.95C23.092 0 24 0.908 24 2.026v19.95C24 23.092 23.092 24 21.976 24zM9.056 7.012h5.889v1.941h-5.89V7.012zm-5.889 2.665h11.78v1.55H3.167v-1.55zm0 3.45h11.78v1.55H3.167v-1.55zm10.834 3.445H3.167v1.553h10.834v-1.553z"/>
                     </svg>
                   </div>
                   <span className="text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">Blogger</span>
