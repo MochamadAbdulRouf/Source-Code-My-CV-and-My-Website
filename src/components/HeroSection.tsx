@@ -1,7 +1,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import { cn } from '@/lib/utils';
-import { ArrowDownCircle, Download, Github, Instagram, Linkedin, Mail, Cpu, Zap, Wifi, Database, Cloud } from 'lucide-react';
+import { ArrowDownCircle, Download, Github, Instagram, Linkedin, Mail } from 'lucide-react';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const HeroSection = () => {
@@ -149,84 +149,26 @@ const HeroSection = () => {
         
         <div className="md:order-2 order-1 flex justify-center md:justify-end">
           <div className="relative w-64 h-64 sm:w-80 sm:h-80 animate-fade-in">
-            {/* Profile image with tech-themed frame */}
-            <div ref={profileRef} className="absolute inset-0 flex items-center justify-center transition-transform duration-300">
-              {/* Animated tech rings */}
-              <div className="absolute inset-0 w-full h-full animate-spin-slow opacity-10">
-                <div className="absolute inset-0 border-4 border-dashed border-primary/40 rounded-full"></div>
-              </div>
-              <div className="absolute inset-4 w-[calc(100%-32px)] h-[calc(100%-32px)] animate-spin-reverse-slow opacity-20">
-                <div className="absolute inset-0 border-4 border-dotted border-blue-400/60 rounded-full"></div>
-              </div>
-              
-              {/* Tech icons floating around */}
-              <div className="absolute inset-0 w-full h-full">
-                <Cpu className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 h-6 w-6 text-primary animate-pulse" />
-                <Zap className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 h-6 w-6 text-yellow-400 animate-pulse" style={{animationDelay: '0.5s'}} />
-                <Wifi className="absolute top-1/2 right-0 translate-x-1/2 -translate-y-1/2 h-6 w-6 text-green-400 animate-pulse" style={{animationDelay: '1s'}} />
-                <Database className="absolute top-1/2 left-0 -translate-x-1/2 -translate-y-1/2 h-6 w-6 text-purple-400 animate-pulse" style={{animationDelay: '1.5s'}} />
-              </div>
-              
-              {/* Binary data stream effect */}
-              <div className="absolute inset-0 w-full h-full overflow-hidden rounded-full opacity-5">
-                <div className="absolute top-0 left-0 w-full animate-slide-down opacity-50" style={{animationDuration: '15s'}}>
-                  {Array.from({length: 10}).map((_, i) => (
-                    <div key={i} className="text-xs text-primary font-mono whitespace-nowrap">
-                      {Array.from({length: 40}).map((_, j) => (
-                        <span key={j}>{Math.round(Math.random())}</span>
-                      ))}
-                    </div>
-                  ))}
-                </div>
-              </div>
-              
-              {/* Glowing effect */}
-              <div className="absolute inset-0 rounded-full bg-primary/10 opacity-50 blur-lg animate-pulse"></div>
-              
-              {/* The main profile image */}
-              <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-primary/30 shadow-xl z-10">
-                <Avatar className="w-full h-full">
-                  <AvatarImage 
-                    src="/lovable-uploads/a2810cf4-2333-45cd-ad74-d8e2ff212f04.png" 
-                    alt="Mochamad Abdul Rouf" 
-                    className="object-cover"
-                  />
-                  <AvatarFallback>MAR</AvatarFallback>
-                </Avatar>
-                
-                {/* Inner glow overlay */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent opacity-60"></div>
-              </div>
+            <div ref={profileRef} className="relative w-full h-full rounded-full overflow-hidden border-4 border-primary/30 shadow-xl animate-float">
+              <Avatar className="w-full h-full">
+                <AvatarImage 
+                  src="/lovable-uploads/a2810cf4-2333-45cd-ad74-d8e2ff212f04.png" 
+                  alt="Mochamad Abdul Rouf" 
+                  className="object-cover"
+                />
+                <AvatarFallback>MAR</AvatarFallback>
+              </Avatar>
+              <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent opacity-60"></div>
             </div>
             
-            {/* Technology-themed info panels */}
-            <div className="absolute -bottom-6 -right-6 p-4 glass-panel rounded-lg animate-fade-in animate-delay-500 border border-primary/30 backdrop-blur-lg shadow-lg">
-              <div className="flex items-center gap-2">
-                <Cloud className="h-4 w-4 text-primary" />
-                <p className="text-sm font-medium">Fresh Graduate</p>
-              </div>
+            <div className="absolute -bottom-6 -right-6 p-4 glass-panel rounded-lg animate-fade-in animate-delay-500">
+              <p className="text-sm font-medium">Fresh Graduate</p>
               <p className="text-xs text-muted-foreground">Cloud & Infrastructure</p>
             </div>
             
-            <div className="absolute -top-6 -left-6 p-4 glass-panel rounded-lg animate-fade-in animate-delay-600 border border-primary/30 backdrop-blur-lg shadow-lg">
-              <div className="flex items-center gap-2">
-                <Zap className="h-4 w-4 text-yellow-400" />
-                <p className="text-sm font-medium">DevOps Enthusiast</p>
-              </div>
+            <div className="absolute -top-6 -left-6 p-4 glass-panel rounded-lg animate-fade-in animate-delay-600">
+              <p className="text-sm font-medium">DevOps Enthusiast</p>
               <p className="text-xs text-muted-foreground">CI/CD & Automation</p>
-            </div>
-            
-            {/* Animated decorative elements */}
-            <div className="absolute -z-10 w-full h-full animate-spin" style={{ animationDuration: '15s' }}>
-              <div className="absolute top-0 left-1/2 w-2 h-2 rounded-full bg-primary/60"></div>
-              <div className="absolute bottom-0 left-1/2 w-2 h-2 rounded-full bg-primary/60"></div>
-              <div className="absolute left-0 top-1/2 w-2 h-2 rounded-full bg-primary/60"></div>
-              <div className="absolute right-0 top-1/2 w-2 h-2 rounded-full bg-primary/60"></div>
-            </div>
-            
-            {/* Circuit pattern overlay */}
-            <div className="absolute inset-0 w-full h-full -z-20 opacity-10">
-              <div className="w-full h-full bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NiIgaGVpZ2h0PSI1NiI+CiAgPHBhdGggZD0iTTAgMGg4djhIMHptMjQgMGg4djhIMjR6bTI0IDBoOHY4SDQ4ek0wIDI0aDh2OEgwem0yNCAwaDh2OEgyNHptMjQgMGg4djhINDh6TTAgNDhoOHY4SDB6bTI0IDBoOHY4SDI0em0yNCAwaDh2OEg0OHoiIGZpbGw9IiNmZmYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgb3BhY2l0eT0iLjUiLz4KPC9zdmc+')] opacity-20 animate-pulse"></div>
             </div>
           </div>
         </div>
