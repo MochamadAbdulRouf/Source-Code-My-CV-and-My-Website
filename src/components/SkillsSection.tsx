@@ -194,9 +194,16 @@ const skillCategories = [
     name: "Organizations",
     icon: <Users className="w-6 h-6 text-primary" />,
     skills: [
-      <div key="komunitas" className="flex items-center gap-2">
-        <KomunitasITLogo />
-        <span>Komunitas IT SMKN 1 Nglegok</span>
+      <div key="komunitas" className="flex flex-col items-start gap-1">
+        <div className="flex items-center gap-2">
+          <KomunitasITLogo />
+          <span>Komunitas IT SMKN 1 Nglegok</span>
+        </div>
+        <div className="pl-10 text-xs text-muted-foreground space-y-1">
+          <p>• Active member at Komunitas IT SMKN 1 NGLEGOK</p>
+          <p>• Ketua Pelaksana Outbound & Sertijab Komunitas IT SMKN 1 NGLEGOK | 2024</p>
+          <p>• Penanggung Jawab Sie Human Resource</p>
+        </div>
       </div>
     ]
   }
