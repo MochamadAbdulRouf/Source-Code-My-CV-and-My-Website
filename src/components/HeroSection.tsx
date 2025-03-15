@@ -158,6 +158,15 @@ const HeroSection = () => {
                 />
                 <AvatarFallback>MAR</AvatarFallback>
               </Avatar>
+              
+              {/* Modern frame animation elements */}
+              <div className="absolute inset-0 rounded-full border-4 border-transparent animate-spin-slow opacity-30">
+                <div className="absolute inset-0 rounded-full border-2 border-dashed border-primary/40"></div>
+              </div>
+              <div className="absolute inset-[-8px] rounded-full border-2 border-primary/20 animate-spin-reverse-slow opacity-60"></div>
+              <div className="absolute inset-[-16px] rounded-full border border-primary/10 animate-spin-slow opacity-40"></div>
+              
+              {/* Glow effect */}
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent opacity-60"></div>
             </div>
             
