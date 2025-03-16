@@ -46,8 +46,8 @@ const ExperienceSection = () => {
     <AnimatedSection id="experience" className="py-20 bg-gradient-to-b from-white to-gray-50">
       <div className="section-container">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Professional Experience</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-primary">Professional Experience</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto text-primary/80">
             My journey in the world of infrastructure and DevOps, where I've helped companies build 
             scalable and reliable systems.
           </p>
@@ -84,8 +84,8 @@ const ExperienceSection = () => {
                         <Calendar size={14} className="inline" />
                         {exp.period}
                       </span>
-                      <h3 className="text-xl font-bold">{exp.title}</h3>
-                      <p className="text-muted-foreground flex items-center gap-2">
+                      <h3 className="text-xl font-bold text-primary">{exp.title}</h3>
+                      <p className="text-muted-foreground flex items-center gap-2 text-primary/80">
                         <Building size={14} className="inline" />
                         {exp.company}
                       </p>

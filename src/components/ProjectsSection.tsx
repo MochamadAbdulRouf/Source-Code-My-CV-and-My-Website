@@ -9,16 +9,16 @@ const ProjectsSection = () => {
     <AnimatedSection id="projects" className="py-20 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-950">
       <div className="section-container">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Featured Projects</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-primary">Featured Projects</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto text-primary/80">
             Showcasing my work in infrastructure design, DevOps automation, and system optimization.
           </p>
         </div>
         
         <div className="flex flex-col items-center justify-center py-10">
           <div className="mb-8 text-center">
-            <p className="text-2xl font-bold mb-4">Coming Soon</p>
-            <p className="text-muted-foreground max-w-md mx-auto">
+            <p className="text-2xl font-bold mb-4 text-primary">Coming Soon</p>
+            <p className="text-muted-foreground max-w-md mx-auto text-primary/80">
               I'm currently working on some exciting projects that will be featured here soon.
             </p>
           </div>

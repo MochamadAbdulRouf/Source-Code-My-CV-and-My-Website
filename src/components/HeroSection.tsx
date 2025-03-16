@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import { cn } from '@/lib/utils';
 import { ArrowDownCircle, Download, Github, Instagram, Linkedin, Mail } from 'lucide-react';
@@ -109,7 +108,7 @@ const HeroSection = () => {
               <Github size={22} />
             </a>
             <a
-              href="https://www.linkedin.com/in/mochamad-abdul-rouf-b09333338" 
+              href="https://www.linkedin.com/in/mochamad-abdul-rouf-b093333338" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-2 rounded-full bg-secondary text-foreground hover:bg-[#0077B5] hover:text-white transition-all hover:scale-110"

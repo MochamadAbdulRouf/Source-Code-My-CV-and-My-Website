@@ -105,8 +105,8 @@ const ContactSection = () => {
                   aria-label="Blogger"
                 >
                   <div className="p-4 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 group-hover:bg-[#FF5722] group-hover:text-white transform transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:rotate-6">
-                    <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M21.976 24H2.026C0.908 24 0 23.092 0 21.976V2.026C0 0.908 0.908 0 2.026 0h19.95C23.092 0 24 0.908 24 2.026v19.95C24 23.092 23.092 24 21.976 24zM9.056 7.012h5.889v1.941h-5.89V7.012zm-5.889 2.665h11.78v1.55H3.167v-1.55zm0 3.45h11.78v1.55H3.167v-1.55zm10.834 3.445H3.167v1.553h10.834v-1.553z"/>
+                    <svg className="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M19.2,4.8H4.8C2.2,4.8,0,7,0,9.6v4.8C0,17,2.2,19.2,4.8,19.2h14.4c2.6,0,4.8-2.2,4.8-4.8V9.6C24,7,21.8,4.8,19.2,4.8z M14.4,12 c0,0.7-0.6,1.2-1.2,1.2H9.6c-0.7,0-1.2-0.6-1.2-1.2c0-0.7,0.6-1.2,1.2-1.2h3.6C13.8,10.8,14.4,11.3,14.4,12z M14.4,16.8 c0,0.7-0.6,1.2-1.2,1.2H9.6c-0.7,0-1.2-0.6-1.2-1.2c0-0.7,0.6-1.2,1.2-1.2h3.6C13.8,15.6,14.4,16.1,14.4,16.8z M14.4,7.2 c0,0.7-0.6,1.2-1.2,1.2H9.6c-0.7,0-1.2-0.6-1.2-1.2c0-0.7,0.6-1.2,1.2-1.2h3.6C13.8,6,14.4,6.6,14.4,7.2z"/>
                     </svg>
                   </div>
                   <span className="text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">Blogger</span>
@@ -117,8 +117,8 @@ const ContactSection = () => {
           
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 border border-gray-100 dark:border-gray-700 shadow-xl flex flex-col justify-center">
             <div className="text-center space-y-6">
-              <h3 className="text-2xl font-semibold">Let's Work Together</h3>
-              <p className="text-muted-foreground max-w-md mx-auto">
+              <h3 className="text-2xl font-semibold text-primary">Let's Work Together</h3>
+              <p className="text-muted-foreground max-w-md mx-auto text-primary/80">
                 I'm currently looking for new opportunities. If you're interested in working together or have a project in mind, please feel free to reach out!
               </p>
               <div className="animate-bounce mt-8">
