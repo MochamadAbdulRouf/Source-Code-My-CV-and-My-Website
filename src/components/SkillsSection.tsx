@@ -1,7 +1,7 @@
 
 import React from 'react';
 import AnimatedSection from './AnimatedSection';
-import { Server, Database, Cloud, Terminal, Code, Shield, Users } from 'lucide-react';
+import { Server, Database, Cloud, Terminal, Code, Shield, Users, Wifi } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import KomunitasITLogo from './KomunitasITLogo';
 
@@ -38,12 +38,24 @@ const skillCategories = [
     skills: ["PostgreSQL", "MySQL", "Redis", "DynamoDB"]
   },
   {
+    name: "Network Administrator",
+    icon: <Wifi className="w-6 h-6 text-primary" />,
+    skills: ["MTCNA"]
+  },
+  {
     name: "Organizations",
     icon: <Users className="w-6 h-6 text-primary" />,
     skills: [
       <div key="komunitas" className="flex items-center gap-2">
         <KomunitasITLogo />
-        <span>Komunitas IT SMKN 1 Nglegok</span>
+        <div className="flex flex-col">
+          <span>Komunitas IT SMKN 1 Nglegok</span>
+          <ul className="text-xs text-muted-foreground list-disc pl-4 mt-1 space-y-1">
+            <li>Active member at Komunitas IT SMKN 1 NGLEGOK</li>
+            <li>Ketua Pelaksana Outbound & Sertijab Komunitas IT SMKN 1 NGLEGOK | 2024</li>
+            <li>Penanggung Jawab Sie Human Resource</li>
+          </ul>
+        </div>
       </div>
     ]
   }
