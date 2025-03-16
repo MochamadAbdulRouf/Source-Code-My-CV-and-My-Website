@@ -149,67 +149,34 @@ const HeroSection = () => {
         
         <div className="md:order-2 order-1 flex justify-center md:justify-end">
           <div className="relative w-64 h-64 sm:w-80 sm:h-80 animate-fade-in">
-            <div ref={profileRef} className="relative w-full h-full rounded-full overflow-hidden border-4 border-primary/30 shadow-xl animate-float">
-              <Avatar className="w-full h-full">
-                <AvatarImage 
-                  src="/lovable-uploads/a2810cf4-2333-45cd-ad74-d8e2ff212f04.png" 
-                  alt="Mochamad Abdul Rouf" 
-                  className="object-cover"
-                />
-                <AvatarFallback>MAR</AvatarFallback>
-              </Avatar>
-              
-              {/* Modern tech-themed frame animations */}
-              <div className="absolute inset-0 rounded-full border-4 border-transparent animate-spin-slow opacity-30">
-                <div className="absolute inset-0 rounded-full border-2 border-dashed border-primary/40"></div>
+            {/* Profile image with floating animation */}
+            <div ref={profileRef} className="absolute inset-0 flex items-center justify-center transition-transform duration-300">
+              <div className="w-full h-full rounded-full overflow-hidden border-4 border-primary/30 shadow-xl">
+                <Avatar className="w-full h-full">
+                  <AvatarImage 
+                    src="/lovable-uploads/a2810cf4-2333-45cd-ad74-d8e2ff212f04.png" 
+                    alt="Mochamad Abdul Rouf" 
+                    className="object-cover"
+                  />
+                  <AvatarFallback>MAR</AvatarFallback>
+                </Avatar>
               </div>
-              
-              {/* Additional spinning circles */}
-              <div className="absolute inset-[-8px] rounded-full border-2 border-primary/20 animate-spin-reverse-slow opacity-60"></div>
-              <div className="absolute inset-[-16px] rounded-full border border-primary/10 animate-spin-slow opacity-40"></div>
-              
-              {/* Small spinning tech dots */}
-              {Array.from({ length: 6 }).map((_, i) => (
-                <div 
-                  key={i}
-                  className="absolute w-2 h-2 rounded-full bg-primary animate-spin-slow"
-                  style={{
-                    top: `${50 + 48 * Math.cos(i * Math.PI / 3)}%`,
-                    left: `${50 + 48 * Math.sin(i * Math.PI / 3)}%`,
-                    animationDuration: `${8 + i * 2}s`,
-                    animationDelay: `${i * 0.5}s`
-                  }}
-                />
-              ))}
-              
-              {/* Small spinning tech lines */}
-              {Array.from({ length: 4 }).map((_, i) => (
-                <div 
-                  key={`line-${i}`}
-                  className="absolute h-0.5 bg-primary/50 animate-spin-slow origin-center"
-                  style={{
-                    width: `${Math.random() * 10 + 25}%`,
-                    top: `${Math.random() * 100}%`,
-                    left: `${Math.random() * 50 + 25}%`,
-                    animationDuration: `${15 + i * 5}s`,
-                    transform: `rotate(${i * 45}deg)`,
-                    opacity: 0.6
-                  }}
-                />
-              ))}
-              
-              {/* Glow effect */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent opacity-60"></div>
             </div>
-            
             <div className="absolute -bottom-6 -right-6 p-4 glass-panel rounded-lg animate-fade-in animate-delay-500">
               <p className="text-sm font-medium">Fresh Graduate</p>
               <p className="text-xs text-muted-foreground">Cloud & Infrastructure</p>
             </div>
-            
             <div className="absolute -top-6 -left-6 p-4 glass-panel rounded-lg animate-fade-in animate-delay-600">
               <p className="text-sm font-medium">DevOps Enthusiast</p>
               <p className="text-xs text-muted-foreground">CI/CD & Automation</p>
+            </div>
+            
+            {/* Animated decorative elements */}
+            <div className="absolute -z-10 w-full h-full animate-spin" style={{ animationDuration: '15s' }}>
+              <div className="absolute top-0 left-1/2 w-2 h-2 rounded-full bg-primary/60"></div>
+              <div className="absolute bottom-0 left-1/2 w-2 h-2 rounded-full bg-primary/60"></div>
+              <div className="absolute left-0 top-1/2 w-2 h-2 rounded-full bg-primary/60"></div>
+              <div className="absolute right-0 top-1/2 w-2 h-2 rounded-full bg-primary/60"></div>
             </div>
           </div>
         </div>
