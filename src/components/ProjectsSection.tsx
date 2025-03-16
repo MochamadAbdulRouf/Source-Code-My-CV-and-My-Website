@@ -18,7 +18,9 @@ const ProjectsSection = () => {
               style={{ 
                 top: `${Math.random() * 100}%`, 
                 left: `${Math.random() * 100}%`,
-                transform: `rotate(${Math.random() * 360}deg)` 
+                transform: `rotate(${Math.random() * 360}deg)`,
+                animationDelay: `${i * 0.1}s`,
+                animation: 'float 6s ease-in-out infinite'
               }}
             >
               {Math.random() > 0.5 ? '1' : '0'}
@@ -26,39 +28,39 @@ const ProjectsSection = () => {
           ))}
           
           {/* Circuit lines */}
-          <div className="absolute top-1/4 left-1/4 w-1/2 h-0.5 bg-primary/20 rounded-full"></div>
-          <div className="absolute top-1/3 right-1/4 w-1/3 h-0.5 bg-primary/20 rounded-full"></div>
-          <div className="absolute bottom-1/4 left-1/3 w-1/3 h-0.5 bg-primary/20 rounded-full"></div>
-          <div className="absolute top-1/2 left-1/2 w-0.5 h-1/3 bg-primary/20 rounded-full"></div>
+          <div className="absolute top-1/4 left-1/4 w-1/2 h-0.5 bg-primary/20 rounded-full animate-pulse"></div>
+          <div className="absolute top-1/3 right-1/4 w-1/3 h-0.5 bg-primary/20 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+          <div className="absolute bottom-1/4 left-1/3 w-1/3 h-0.5 bg-primary/20 rounded-full animate-pulse" style={{ animationDelay: '0.7s' }}></div>
+          <div className="absolute top-1/2 left-1/2 w-0.5 h-1/3 bg-primary/20 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
           
           {/* Tech icons */}
           <div className="absolute top-20 right-20 w-32 h-32">
-            <Braces className="w-full h-full text-primary opacity-10" />
+            <Braces className="w-full h-full text-primary opacity-10 animate-float" />
           </div>
           <div className="absolute bottom-40 left-20 w-28 h-28">
-            <Server className="w-full h-full text-primary opacity-10" />
+            <Server className="w-full h-full text-primary opacity-10 animate-float" style={{ animationDelay: '0.3s' }} />
           </div>
           <div className="absolute top-1/2 left-1/3 w-24 h-24">
-            <Database className="w-full h-full text-primary opacity-10" />
+            <Database className="w-full h-full text-primary opacity-10 animate-float" style={{ animationDelay: '0.6s' }} />
           </div>
           <div className="absolute bottom-1/3 right-1/3 w-40 h-40">
-            <Cpu className="w-full h-full text-primary opacity-10" />
+            <Cpu className="w-full h-full text-primary opacity-10 animate-float" style={{ animationDelay: '0.9s' }} />
           </div>
           <div className="absolute top-3/4 right-1/4 w-36 h-36">
-            <Code className="w-full h-full text-primary opacity-10" />
+            <Code className="w-full h-full text-primary opacity-10 animate-float" style={{ animationDelay: '1.2s' }} />
           </div>
         </div>
       </div>
       
       <div className="section-container relative z-10">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-up">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-purple-600">Featured Projects</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-purple-600">
             Showcasing my work in infrastructure design, DevOps automation, and system optimization.
           </p>
         </div>
         
-        <div className="flex flex-col items-center justify-center py-10">
+        <div className="flex flex-col items-center justify-center py-10 animate-fade-up" style={{ animationDelay: '0.3s' }}>
           <div className="mb-8 text-center">
             <div className="relative inline-block mb-6">
               <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center animate-pulse">
@@ -77,7 +79,8 @@ const ProjectsSection = () => {
             href="https://github.com/MochamadAbdulRouf" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-lg font-medium transition-all hover:translate-y-[-2px] hover:shadow-lg relative overflow-hidden group"
+            className="flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-lg font-medium transition-all hover:translate-y-[-2px] hover:shadow-lg relative overflow-hidden group animate-fade-up"
+            style={{ animationDelay: '0.5s' }}
           >
             {/* Button shine effect */}
             <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-20 translate-x-[-100%] group-hover:translate-x-[100%] transition-all duration-1000"></span>

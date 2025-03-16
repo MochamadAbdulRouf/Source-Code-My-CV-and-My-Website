@@ -49,21 +49,21 @@ const ExperienceSection = () => {
     <AnimatedSection id="experience" className="py-20 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
       {/* Tech-themed background decorations */}
       <div className="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none">
-        <div className="absolute top-10 left-10 w-24 h-24 border-2 border-primary rounded-lg rotate-12"></div>
-        <div className="absolute top-40 right-20 w-40 h-40 border border-primary rounded-full"></div>
-        <div className="absolute bottom-10 left-1/3 w-16 h-16 border border-primary rotate-45"></div>
+        <div className="absolute top-10 left-10 w-24 h-24 border-2 border-primary rounded-lg rotate-12 animate-pulse"></div>
+        <div className="absolute top-40 right-20 w-40 h-40 border border-primary rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+        <div className="absolute bottom-10 left-1/3 w-16 h-16 border border-primary rotate-45 animate-pulse" style={{ animationDelay: '1s' }}></div>
         <div className="absolute top-1/4 right-1/2 w-32 h-32">
-          <Cpu className="w-full h-full text-primary opacity-10" />
+          <Cpu className="w-full h-full text-primary opacity-10 animate-float" style={{ animationDelay: '0.3s' }} />
         </div>
         <div className="absolute bottom-1/4 right-1/4 w-40 h-40">
-          <Terminal className="w-full h-full text-primary opacity-10" />
+          <Terminal className="w-full h-full text-primary opacity-10 animate-float" style={{ animationDelay: '0.8s' }} />
         </div>
       </div>
       
       <div className="section-container relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-primary">
-            <span className="text-purple-600">Professional Experience</span>
+        <div className="text-center mb-16 animate-fade-up">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-purple-600">
+            Professional Experience
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-purple-600">
             My journey in the world of infrastructure and DevOps, where I've helped companies build 
@@ -78,10 +78,14 @@ const ExperienceSection = () => {
           {/* Experience items */}
           <div className="space-y-12">
             {experiences.map((exp, index) => (
-              <div key={index} className={cn(
-                "relative grid grid-cols-1 md:grid-cols-2 gap-8 items-start",
-                index % 2 === 0 ? "md:text-right" : "md:text-left"
-              )}>
+              <div 
+                key={index} 
+                className={cn(
+                  "relative grid grid-cols-1 md:grid-cols-2 gap-8 items-start animate-fade-up",
+                  index % 2 === 0 ? "md:text-right" : "md:text-left"
+                )}
+                style={{ animationDelay: `${index * 0.2}s` }}
+              >
                 {/* Timeline pulse dot */}
                 <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-6 h-6 rounded-full bg-primary border-4 border-white shadow-lg shadow-primary/30 z-10 animate-pulse"></div>
                 
