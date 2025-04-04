@@ -55,28 +55,28 @@ const ExperienceSection = () => {
         </div>
         
         <div className="relative">
-          {/* Main Timeline line - thicker and more visible */}
-          <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-purple-300 rounded-full shadow-[0_0_10px_rgba(168,85,247,0.5)]"></div>
+          {/* Enhanced Timeline line - thicker, more visible with home menu purple color */}
+          <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-1.5 bg-[#8B5CF6] rounded-full shadow-[0_0_15px_rgba(139,92,246,0.6)]"></div>
           
-          {/* Tech decorative elements */}
-          <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 top-0 -mt-4 w-6 h-6 rounded-full bg-purple-600 border-4 border-white shadow-[0_0_15px_rgba(168,85,247,0.7)] animate-pulse"></div>
-          <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 bottom-0 -mb-4 w-6 h-6 rounded-full bg-purple-600 border-4 border-white shadow-[0_0_15px_rgba(168,85,247,0.7)] animate-pulse"></div>
+          {/* Tech decorative elements with matching purple */}
+          <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 top-0 -mt-4 w-7 h-7 rounded-full bg-[#8B5CF6] border-4 border-white shadow-[0_0_15px_rgba(139,92,246,0.7)] animate-pulse"></div>
+          <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 bottom-0 -mb-4 w-7 h-7 rounded-full bg-[#8B5CF6] border-4 border-white shadow-[0_0_15px_rgba(139,92,246,0.7)] animate-pulse"></div>
           
           {/* Experience items */}
-          <div className="space-y-8">
+          <div className="space-y-12">
             {experiences.map((exp, index) => (
               <div key={index} className={cn(
                 "relative grid grid-cols-1 md:grid-cols-2 gap-8 items-start animate-fade-up",
                 index % 2 === 0 ? "md:text-right" : "md:text-left"
               )}
               style={{ animationDelay: `${index * 150}ms` }}>
-                {/* Enhanced Timeline dot */}
-                <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-5 h-5 rounded-full bg-purple-600 border-4 border-white shadow-[0_0_10px_rgba(168,85,247,0.7)] z-10"></div>
+                {/* Enhanced Timeline dot with matching purple */}
+                <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-6 h-6 rounded-full bg-[#8B5CF6] border-4 border-white shadow-[0_0_12px_rgba(139,92,246,0.7)] z-10"></div>
                 
-                {/* Timeline connectors - horizontal lines connecting dots to content */}
+                {/* Timeline connectors - improved horizontal lines connecting dots to content */}
                 <div className={cn(
-                  "absolute top-2.5 hidden md:block h-px bg-purple-300 w-8",
-                  index % 2 === 0 ? "right-[calc(50%-10px)] md:right-[calc(50%-10px)]" : "left-[calc(50%-10px)] md:left-[calc(50%-10px)]"
+                  "absolute top-3 hidden md:block h-1 bg-[#8B5CF6] shadow-[0_0_8px_rgba(139,92,246,0.4)] w-12 rounded-full",
+                  index % 2 === 0 ? "right-[calc(50%-12px)]" : "left-[calc(50%-12px)]"
                 )}></div>
                 
                 {/* Content positioning */}
@@ -88,11 +88,11 @@ const ExperienceSection = () => {
                   <div className={cn(
                     "bg-white rounded-lg shadow-md p-6 border border-purple-100 transition-all duration-300 hover:shadow-lg hover:shadow-purple-200/40 relative z-10",
                     index % 2 === 0 
-                      ? "md:mr-8 ml-8 md:ml-0" 
-                      : "md:order-2 md:ml-8 ml-8 md:mr-0"
+                      ? "md:mr-12 ml-8 md:ml-0" 
+                      : "md:order-2 md:ml-12 ml-8 md:mr-0"
                   )}>
-                    {/* Top separator for visual distinction */}
-                    <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-400 to-purple-600 rounded-t-lg"></div>
+                    {/* Top separator with matching purple */}
+                    <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-[#8B5CF6] to-[#A78BFA] rounded-t-lg"></div>
                     
                     <div className="flex flex-col space-y-3 pt-2">
                       <span className="text-sm font-medium text-purple-600 flex items-center gap-2">
@@ -112,7 +112,7 @@ const ExperienceSection = () => {
                         <ul className="space-y-2">
                           {exp.achievements.map((achievement, i) => (
                             <li key={i} className="flex items-start gap-2">
-                              <BadgeCheck size={18} className="text-purple-600 flex-shrink-0 mt-0.5" />
+                              <BadgeCheck size={18} className="text-[#8B5CF6] flex-shrink-0 mt-0.5" />
                               <span className="text-gray-600">{achievement}</span>
                             </li>
                           ))}
